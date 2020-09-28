@@ -1,0 +1,12 @@
+{% macro not_verified_warning() -%}
+  {% if current_user.is_authenticated and not current_user.is_verified() %}
+    <div class="alert alert-warning" role="alert">
+      <div class="container">
+        Your account is not activated.
+        <a href="{{ url_for('user.settings') }}">
+          Please activate it.</a>
+        .
+      </div>
+    </div>
+  {% endif %}
+{%- endmacro %}

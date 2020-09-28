@@ -1,0 +1,9 @@
+MAIL_USERNAME = 'marius.testare.mail@gmail.com'
+MAIL_PASSWORD = 'ParolaTestare2000'
+
+ANALYTICS_GOOGLE_UA = 'fff'
+
+STRIPE_SECRET_KEY = 'sk_test_51HPpcKAghl9qcCnYMy1ElcDnO0tP0FND6dIKAa1nTRf0FGQYXlJ3456Ys1qvRtk5yfyPT3Zl8K20yMMYptrazZVO00jTlgLy7h'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51HPpcKAghl9qcCnYAO9phvkrpZocN9Ha8LIWwsn9H6j5YnAe4TkKSMeePGPXVvjFsH0akGwzjBzhv56U5AHOuV9X005ei5Sccl'
+
+#SERVER_NAME = '47f1060121cb.ngrok.io'

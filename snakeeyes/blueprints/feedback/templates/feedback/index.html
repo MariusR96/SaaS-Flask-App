@@ -1,0 +1,25 @@
+{% extends 'layouts/app.html' %}
+{% import 'macros/form.html' as f with context %}
+
+{% block title %}Give us your feedback{% endblock %}
+{% block meta_description %}Give any feedback you have in order to improve our services. {% endblock %}
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well">
+    {% call f.form_tag('feedback.index') %}
+        <legend>Help us improve our services!</legend>
+
+        {% call f.form_group(form.email, css_class='margin-borrom',
+                            placeholder='Email adress') %}
+        {% endcall %}
+        
+        {% call f.form_group(form.feedback, css_class='margin-borrom',
+                            placeholder='Your feedback', rows='12') %}
+        {% endcall %}
+        <button type='submit' class='btn btn-primary'>Send e-mail</button>
+    {% endcall %}
+    </div>
+</div>
+{% endblock %}

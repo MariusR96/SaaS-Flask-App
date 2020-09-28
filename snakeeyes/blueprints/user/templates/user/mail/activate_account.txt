@@ -1,0 +1,8 @@
+Hi {{ user.email }},
+
+To activate your account, click the link below:
+
+{{ url_for('user.activate_account', validation_token=validation_token, _external=True) }}
+
+Thanks,
+Snake Eyes
